@@ -1,0 +1,96 @@
+<!--
+Alexander:
+ - Hovedansvar for HTML og CSS
+ - HTML skjelettet
+ - Head
+ - Header
+ - Main-container
+    - Person-#-wrap
+    - Audio
+    -Person-#-info
+ - Intro
+
+Vegard:
+ - Footer
+ - Intro
+ 
+Ben Nicholay:
+ - Main-container
+   - Chooser-texts
+   
+Johan:
+ - main-container
+   - Pictures
+-->
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <link href="css/main-style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+          <h1>PICK A DICTATOR</h1>
+          <img class="claw claw-1" src="images/claw.png">
+      </header>
+    <div id="main-container">
+        
+          <!-- CHOOSER START-->
+          <div id="person-1-wrap">
+               <a href="hitler.html" ><img class="person person-1" src="images/hitler.png"></a>
+               <img class="stand stand-1" src="images/stand.png">
+               <p class="name chooser-text">HITLER</p>
+               <p class="year chooser-text">1889 - 1945</p>
+               <div class="person-1-info chooser-info-text">
+               </div>
+               <audio controls class="play play-1"><source src="Sounds/Hitler-NEIN.mp3" type="audio/mpeg"></audio>
+          </div>
+          <div id="person-2-wrap">
+               <a href="stalin.html" ><img class="person person-2" src="images/stalin.png"></a>
+               <img class="stand stand-2" src="images/stand.png">
+               <p class="name chooser-text">STALIN</p>
+               <p class="year chooser-text">1878 - 1953</p>
+               <div class="person-2-info chooser-info-text">
+                       
+               </div>
+               <audio controls class="play play-2"><source src="Sounds/Stalin-speach.mp3" type="audio/mpeg"></audio>
+          </div>
+          <div id="person-3-wrap">
+              <a href="person3.html" ><img class="person person-3" src="images/caratoon.png"></a>
+              <img class="stand stand-3" src="images/stand.png">
+              <p class="name chooser-text">THE GREYS</p>
+              <p class="year chooser-text">Not known - 2073</p>
+              <div class="person-3-info chooser-info-text">
+                       
+               </div>
+               <audio controls class="play play-3"><source src="Sounds/alien_sound.mp3" type="audio/mpeg"></audio>
+          </div>
+          <div id="person-4-wrap">
+              <a href="future.html" ><img class="person person-4" src="images/robot.png"></a>
+             <img class="stand stand-4" src="images/stand.png">
+             <p class="name chooser-text">SPENCER</p>
+             <p class="year chooser-text">2068 - Present</p>
+             <div class="person-4-info chooser-info-text">
+                       
+               </div>
+               <audio controls class="play play-4"><source src="Sounds/AI_sound.mp3" type="audio/mpeg"></audio>
+          </div>
+        <!-- END CHOOSER-->
+         <!-- INTRO START-->
+          <div id="intro">
+              <img id="intro-text" src="images/intro.png">
+          </div>
+          <!-- END INTRO-->
+    </div>
+    <!-- END CONTAINER -->
+    <div id="footer">
+        <p id="footer-text">Copyright © 2017 by Group 37, WESTERDALS OSLO ACT</p>
+    </div>
+    <!--END FOOTER-->
+    
+</body>
+</html>

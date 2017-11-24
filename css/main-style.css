@@ -1,0 +1,404 @@
+/*
+Alexander:
+ - Hovedansvar for HTML og CSS
+
+Vegard:
+ - Var med på Main-style
+ 
+Ben Nicholay:
+ - Var med på Main-style
+*/
+html, body{
+    background-color: darkred;
+    width: 100% auto;
+    height: 100% auto;
+}
+/*START HEADER*/
+header{
+    position: relative;
+    width: 100% auto;
+    background-color: rgb(40,40,40);
+    margin: auto;
+    margin-bottom: 1%;
+    margin-top: -1%;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 280%;
+    -webkit-animation: headeranim 3s infinite;
+    margin-top: 1%;
+    font-family: 'Oswald', sans-serif;
+}
+@keyframes headeranim{
+    0%{
+        color:red
+    }
+    100%{
+        color: coral;
+    }
+}
+
+.claw{
+    position: absolute;
+    width: 25% auto;
+    top: -90%;
+    left: -4%;
+    opacity: 0.6;
+    z-index: 5;
+}
+
+/*END HEADER*/
+#main-container{
+    position: relative;
+    width: 100% auto;
+    padding: 25%;
+    overflow: hidden;
+    background-color: rgb(40,40,40);
+    margin: auto;
+    overflow: hidden;
+}
+/*START CHOOSER*/
+
+.person{
+    position: absolute;
+    width: 46%;
+    z-index: 100;
+    -webkit-transition: all 1s ease-in-out;
+    cursor: pointer;
+    -webkit-animation: person-anim 10s infinite linear;
+}
+@keyframes person-anim{
+    0%{
+      -webkit-animation-delay: 3s;  
+    }
+    100%{
+        -webkit-transform: rotateY(360deg);
+    }
+}
+.stand{
+    position: absolute;
+    width: 55%;
+    z-index: 2;
+    
+}
+.chooser-info-text{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    background-color: red;
+    border-radius: 20%;
+
+}
+
+.play{
+    position: absolute;
+    width: 30%;
+}
+/*INFO PICTURE*/
+.picture{
+    position: absolute;
+
+}
+/*CHOOSER 1*/
+#person-1-wrap{
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    left: 17.5%;
+    top: 5%;
+    
+}
+.person-1{
+    bottom: 20%;
+    left: 20%;
+}
+.stand-1{
+    bottom: 9%;
+    left: 16%;
+}
+.person-1-info{
+    left: -75%;
+    bottom: 10%;
+    overflow: hidden;
+    -webkit-animation: hitler-picture 20s infinite linear;
+
+}
+.play-1{
+    bottom:85%;
+    left: 74%;
+    z-index: 99;
+}
+
+@keyframes hitler-picture{
+    0%{
+        background-position: center;
+        background-image: url(../images/hitler-3.jpg);
+    }
+    35%{
+        background-position: center;
+        background-image: url(../images/hitler-3.jpg);
+    }
+    50%{
+        background-position: center;
+        background-position: top;
+        background-image: url(../images/nazi.png);
+    }
+    75%{
+        background-position: center;
+        background-image: url(../images/hitler-2.jpg);
+    }
+    100%{
+       background-position: center;
+        background-image: url(../images/hitler-4.jpg); 
+    }
+}
+.person-1:hover{
+    width: 50%;
+}
+/*END CHOOSER 1*/
+/*CHOOSER 2*/
+#person-2-wrap{
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    left: 65.5%;
+    top: 5%;
+    
+}
+.person-2{
+    width: 19%;
+    bottom: 20%;
+    left: 32%;
+}
+.stand-2{
+    bottom: 9%;
+    left: 16%;
+}
+.person-2-info{
+    left: 85%;
+    bottom: 20px;
+    overflow: hidden;
+    -webkit-animation: stalin-picture 20s infinite linear;
+}
+.play-2{
+    bottom:85%;
+    left: -15%;
+    z-index: 99;
+}
+@keyframes stalin-picture{
+    0%{
+        background-position: center;
+        background-image: url(../images/stalin-1.jpg);
+    }
+    35%{
+        background-position: center;
+        background-image: url(../images/stalin-2.jpg);
+    }
+    50%{
+        background-position: center;
+        background-position: top;
+        background-image: url(../images/stalin-3.jpg);
+    }
+    75%{
+        background-position: center;
+        background-image: url(../images/stalin-1.jpg);
+    }
+    100%{
+       background-position: center;
+        background-image: url(../images/stalin-4.jpg); 
+    }
+}
+.person-2:hover{
+    width: 22%;
+}
+/*END CHOOSER 2*/
+/*CHOOSER 3*/
+#person-3-wrap{
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    left: 17.5%;
+    top: 49.5%;
+    
+}
+.person-3{
+    width: 60%;
+    bottom: 20%;
+    left: 12%;
+}
+.stand-3{
+    bottom: 9%;
+    left: 16%;
+}
+.person-3-info{
+    left: -75%;
+    bottom: 10%;
+    overflow: hidden;
+    -webkit-animation: person3-picture 20s infinite linear;
+}
+.play-3{
+    bottom:85%;
+    left: 74%;
+    z-index: 99;
+}
+
+@keyframes person3-picture{
+    0%{
+        background-position: center;
+        background-image: url(../images/alien_1.jpg);
+    }
+    35%{
+        background-position: center;
+        background-image: url(../images/alien_2.jpg);
+    }
+    50%{
+        background-position: center;
+        background-position: top;
+        background-image: url(../images/alien_3.jpg);
+    }
+    75%{
+        background-position: center;
+        background-image: url(../images/alien_2.jpg);
+    }
+    100%{
+       background-position: center;
+        background-image: url(../images/alien_4.jpg); 
+    }
+}
+.person-3:hover{
+    width: 70%;
+}
+/*END CHOOSER 3*/
+/*CHOOSER 4*/
+#person-4-wrap{
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    left: 65.5%;
+    top: 49.5%;
+    
+}
+.person-4{
+    bottom: 20%;
+    left: 27%;
+    width: 27%;
+}
+
+
+.stand-4{
+    bottom: 9%;
+    left: 16%;
+}
+.person-4-info{
+    left: 85%;
+    bottom: 20px;
+    overflow: hidden;
+    -webkit-animation: mrfuture-picture 20s infinite linear;
+}
+.play-4{
+    bottom:85%;
+    left: -15%;
+    z-index: 99;
+}
+@keyframes mrfuture-picture{
+    0%{
+        background-position: center;
+        background-image: url(../images/ai_1.jpeg);
+    }
+    35%{
+        background-position: center;
+        background-image: url(../images/ai_2.jpg);
+    }
+    50%{
+        background-position: center;
+        background-position: top;
+        background-image: url(../images/ai_3.jpg);
+    }
+    75%{
+        background-position: center;
+        background-image: url(../images/ai_2.jpg);
+    }
+    100%{
+       background-position: center;
+        background-image: url(../images/ai_1.jpeg); 
+    }
+}
+.person-4:hover{
+    width: 32%;
+}
+/*END CHOOSER 4*/
+.chooser-text{
+    position: relative;
+    width: 50%;
+    height: 15%;
+    z-index: 99;
+    left: 30%;
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    font-family: 'Oswald', sans-serif;
+
+}
+.name{
+    left:20%;
+    top: -10%;
+}
+.year{
+    left: 20%;
+    bottom: -60%;
+}
+/*END CHOOSER*/
+/*INTRO*/
+#intro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% auto;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(68,64,66);
+    overflow: hidden;
+    z-index: 200;
+    -webkit-animation: intro 10s forwards;
+}
+#intro-text{
+    margin-top:  -1%;
+    margin-left: -8%;
+}
+
+@keyframes intro{
+    0%{
+        opacity: 1;
+        z-index: 200;
+    }
+    30%{
+        opacity: 1;
+        z-index: 200;
+    }
+    60%{
+        opacity: 1;
+        z-index: 200;
+    }
+    100%{
+      opacity: 0; 
+      z-index: 0;
+    }
+}
+/*END INTRO*/
+/*START FOOTER*/
+#footer{
+    position: relative;
+    width: 100% auto;
+    background-color: rgb(40,40,40);
+    margin: auto;
+    margin-top: 4px;
+    overflow: hidden;
+}
+#footer-text{
+    text-align: center;
+    color: wheat;
+    margin: 1%;
+}
+/*END FOOTER*/
